@@ -4,7 +4,8 @@
   "description": "practise with mongoose and koa2",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon index.js",
+    "test": "mocha --harmony"
   },
   "keywords": [
     "koa2",
@@ -12,5 +13,15 @@
     "mongodb"
   ],
   "author": "Rybin Dmitry",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "babel-eslint": "^7.1.1",
+    "eslint": "3.13.1",
+    "eslint-config-vue": "2.0.1",
+    "eslint-plugin-vue": "1.0.0",
+    "mocha": "^3.2.0",
+    "nodemon": "1.11.0",
+    "request": "2.79.0",
+    "request-promise": "4.1.1"
+  }
 }
