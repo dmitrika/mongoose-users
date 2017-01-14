@@ -1,5 +1,11 @@
+const fs = require('fs')
+const path = require('path')
+
 const Koa = require('koa')
 const app = module.exports = new Koa()
+
+const handlers = fs.readdirSync(path.join(__dirname, 'handlers'))
+handlers.forEach(handler => require('./handlers/' + handler).init(app))
 
 const Router = require('koa-router')
 const router = new Router()
