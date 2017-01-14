@@ -4,14 +4,12 @@ const userSchema = new mongoose.Schema({
     email: {
         type: String,
         required: 'Email required',
-        validate: [
-            {
-                validator: async value => {
-                    return /^[-.\w]+@([\w-]+\.)+[\w-]{2,12}$/.test(value)
-                },
-                msg: 'Invalid email.'
-            }
-        ],
+        validate: [{
+            validator: async value => {
+                return /^[-.\w]+@([\w-]+\.)+[\w-]{2,12}$/.test(value)
+            },
+            msg: 'Invalid email.'
+        }],
         unique: 'Email already registered'
     },
     displayName: {
