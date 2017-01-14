@@ -23,5 +23,9 @@
     "nodemon": "1.11.0",
     "request": "2.79.0",
     "request-promise": "4.1.1"
+  },
+  "dependencies": {
+    "koa": "2.0.0",
+    "koa-router": "^7.0.1"
   }
 }

@@ -1,6 +1,6 @@
 /* globals describe, beforeEach, it */
 
-// const app = require('../app')
+const app = require('../app')
 
 const request = require('request-promise').defaults({
     resolveWithFullResponse: true,
