@@ -4,7 +4,7 @@ mongoose.Promise = Promise
 const beautifyUnique = require('mongoose-beautiful-unique-validation')
 
 mongoose.plugin(beautifyUnique)
-mongoose.set('debug', true) // to check what is going on
+// mongoose.set('debug', true) // to check what is going on
 
 mongoose.plugin(schema => {
     if (!schema.options.toObject) {
